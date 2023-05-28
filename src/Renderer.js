@@ -847,8 +847,9 @@ Renderer.prototype._buildTree = function (node) {
             break;
         case 'caption':
             this._newLine();
-            this._typeKeyword(`${this._options.titlePrefix
-            } ${Renderer.captionCount} `);
+//             this._typeKeyword(`${this._options.titlePrefix
+//             } ${Renderer.captionCount} `);
+            this._typeKeyword(`${this._options.titlePrefix} `);
             textNode = node.children[0];
             this._buildTree(textNode);
             break;
